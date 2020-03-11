@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @*<link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />*@
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Index</title>
+
+    <style>
+        .btn a{
+            color: white;
+            text-decoration: none;
+        }
+        body{
+            margin-top:100px;
+            background-color: #F1F1F1;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-info text-center nav-justified">
+        <h2>We're going to have a seminar on bussiness developments next weekends </h2>
+        <h3> You are invited. Please register.</h3>
+        
+        <div class="btn btn-success">
+            @Html.ActionLink("Register Now", "registerguest")
+        </div>
+    </div>
+</body>
+</html>
